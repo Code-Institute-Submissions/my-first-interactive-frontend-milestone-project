@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>KiddiesSpot</title>
+</head>
+
+  <body>
+    <header>
+        <!-- Used Bootstrap for basic nav. -->
+        <nav class="navbar fixed-top navbar-light 
+         navbar-expand-lg  navbar-fixed-top navstyle">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/logo.jpg" class="logo" alt="KiddiesSpot Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav mr-auto" style=" margin: 0 auto;">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about-menu" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planyourvisit.html">Plan Your Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>    
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Bootstrap grid approach for columns -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 banner-home"> </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="maintitle uppercase">Discover a World of Fun!</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-text-wrapper">
+                            <p style = "text-align: center;">Welcome to the wonder of learning!</p>
+                            <p>At Kiddies Spot, your children have the opportunity to learn by freely exploring and doing. We welcome them to touch it all and do it all...no rules!</p>
+                            <p>We offer a variety of "mini-worlds" (rooms) where children learn by play, as well as a variety of activities and games. We also host monthly events with creative venues for enriching and unforgetable learning experiences.</p>
+                            <p>We help your little one discover his/her likes and preferences, as this can shape the basis for the path they will likely choose as they grow into adulthood. </p>
+                        </div>
+                        <div class="main-image-wrapper">
+                                <img src="./images/fun.jpg" alt="Fun illustration" width="300" height="300" class="img-fluid rounded-circle" style="border:2px solid #87EB31;">
+                        </div>
+                    </div>
+                </div> 
+            </div> 
+        </div>   
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 home-banner-center"></div>
+            </div>
+        </div>
+        
+        <!-- Business Highlights -->
+        <div class="container">  
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="dotted-separator"></div>
+                        <h2 class="subtitle uppercase">Learn By Play</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12"> 
+                    <div class="text-container" id="science">
+                        <span><i class="fas fa-flask" style="font-size:40px;color:#fafafa;"></i></span>
+                        <br> 
+                        <p><strong>Science</strong></p>
+                        <p>Watch the "magic" happen! Hands-on, safe and colorful experiments for your child to practice. Choose from a variety activities.</p>
+                    </div> 
+                    <div class="text-container" id="sports">
+                        <span><i class="fas fa-futbol" style="font-size:40px;color:#fafafa"></i></span>
+                        <br>
+                        <p><strong>Sports</strong></p>
+                        <p>Be ready to move! Choose from different sports and active games. Build teams and play for fun. Book a fitness class fro Zumba, Aerobics, Dance and more!</p>
+                    </div>
+                </div>
+            </div>  
+            <div class = "row">
+                <div class="col-sm-12" style="margin-bottom:50px;">
+                    <div class="text-container" id="arts"><span><i class="fas fa-paint-brush" style="font-size:40px;color:#fafafa"></i></span>
+                        <br>
+                        <p><strong>Arts</strong></p>
+                        <p>Let the creativity flow! We offer a range of supplies for your child to play with and create somehting unique. Choose from painting, music, sculpture, building and photography</p>
+                    </div> 
+                    <div class="text-container" id="games"><span><i class="fas fa-puzzle-piece" style="font-size:40px;color:#fafafa"></i> </span>
+                        <br>
+                        <p><strong>Games</strong></p>
+                        <p>Let's turn daily taks into games! Play to be a doctor, a teacher, a fire-fighter, a lifeguard, an astronaut and more! We also carry more traiditional games for kids of all ages. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Gallery of rooms -->
+        <div class="container-fluid"> 
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="dotted-separator"></div>
+                    <div class="gallery">
+                        <h2 class="subtitle uppercase">Room Gallery</h2>
+                        <ul>
+                            <li class="room1">
+                                <img src="./images/science-room.jpg" alt="Science-Room" width="275" height="225">
+                                <div class="gallery_caption"><strong>Science Room</strong>
+                                </div>
+                            </li>
+                            <li class="room2">
+                                <img src="./images/outerspace-room.jpg" alt="Space Room" width="275" height="225">
+                                        <div class="gallery_caption"><strong>Outerspace Room</strong>
+                                        </div>
+                            </li>
+                            <li class="room3">
+                                <img src="./images/art-room.jpg" alt="Arts Room" width="275" height="225">
+                                        <div class="gallery_caption"><strong>Arts Room</strong>
+                                        </div>
+                            </li>
+                            <li class="room4">
+                                <img src="./images/kitchen-room.jpg" alt="Kitchen Room" width="275" height="225">
+                                        <div class="gallery_caption">
+                                            <strong>Kitchen Room</strong>
+                                        </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align:center;">
+            <a class="planyourvisit-btn uppercase" href="planyourvisit.html">Plan Your Visit</a>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="dotted-separator"></div>
+                </div>
+            </div>
+            <div class = "row"> 
+                <div class="theme-wrapper">
+                     <h2 class="theme-subtitle-wrapper">Theme of the month:<em style="color:#76F134; text-shadow: 1px 1px 1px #fafafa;"> WELLNESS!</em></h2>
+                    <div class="row">
+                        <div class="col-sm-5 theme-pic-wrapper">
+                            <img src="./images/fitness-room.jpg" alt="Fitness Room" width="350" height="300" style="border-radius: 15px;">
+                        </div>
+                        <div class="col-sm-7">
+                            <br>
+                            <div class="theme-text-wrapper">
+                                <h5 style="text-align:center;">LEARNING TO BE HEALTHY AND HAPPY!</h5>
+                                <br>
+                                <ul>
+                                    <li>Dance Lesson for different music styles</li>
+                                    <li>Gym equipment</li>
+                                    <li>Active games</li>
+                                    <li>Sport games</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           </div> 
+        </div>
+    </section>
+    <footer class="container-fluid">
+        <div id="footer-details" class="row">
+            <div id="footer-list" class="col-sm-8">
+                <nav id="menu-widget-2">
+                    <ul>
+                        <li>
+                         <a href="about.html">About Us</a></li>
+                        <li>
+                         <a href="planyourvisit.html">Plan Your Visit</a></li>
+                        <li>
+                         <a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="social-media" class="col-sm-4">
+                <a href="#" target="_blank">
+                        <img src="./images/facebook.png" alt="Facebook logo link to our Facebook page">
+                </a>
+                <a href="#" target="_blank">
+                        <img src="./images/twitter.png" alt="Twitter logo link to our Twitter page">
+                </a>
+                <a href="#" target="_blank">
+                        <img src="./images/instagram.png" alt="Instagram logo link to our Instagram page">
+                </a>
+                <a href="#" target="_blank">
+                        <img src="./images/youtube.png" alt="Youtube logo link to our Youtube video">
+                </a>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
