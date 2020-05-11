@@ -24,32 +24,44 @@ margin-right: 20px;
 }
 
 /* Menu Hover Style. Overridding Bootstrap's*/
+/* Home */
 .navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item:hover .nav-link {
  background-color: #4FB156; /*green*/
 } 
+/* About us menu */
 .navbar-nav .nav-item.active2 .nav-link, .navbar-nav .nav-item:nth-child(2):hover .nav-link {
- background-color:#AB6BFF; /*purple*/
+ background-color: #AB6BFF;
 }
+/* Rooms menu */
 .navbar-nav .nav-item.active3 .nav-link, .navbar-nav .nav-item:nth-child(3):hover .nav-link {
- background-color: #FF9F30; /*orange*/
+ background-color: #FF3932; 
 }
+/*Plan You Visit menu */
 .navbar-nav .nav-item.active4 .nav-link, .navbar-nav .nav-item:nth-child(4):hover .nav-link {
- background-color: #00BCE4;  /*teal blue */
+ background-color: #FF9F30;
+}
+/*Events menu */
+.navbar-nav .nav-item.active5 .nav-link, .navbar-nav .nav-item:nth-child(5):hover .nav-link {
+ background-color: #FF9F30;
+}
+/*Contact us menu */
+.navbar-nav .nav-item.active6 .nav-link, .navbar-nav .nav-item:nth-child(6):hover .nav-link {
+ background-color: #00BCE4;
 }
 
-.navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item.active2 .nav-link, .navbar-nav .nav-item.active3 .nav-link, .navbar-nav .nav-item.active4 .nav-link {
- border-radius: 16px;
- color: white; 
+.navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item.active2 .nav-link, .navbar-nav .nav-item.active3 .nav-link, .navbar-nav .nav-item.active4 .nav-link, .navbar-nav .nav-item.active5 .nav-link, .navbar-nav .nav-item.active6 .nav-link{
+    border-radius: 16px;
+    color: white; 
  }
 
 /* Smooth delay on menu hovering */
 .nav-link {
- transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
 }
 
- .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover{
- border-radius: 16px;
- color: white;
+ .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover{
+    border-radius: 16px;
+    color: white;
 }
 
 .logo {
@@ -68,21 +80,27 @@ margin-right: 20px;
 .banner-about-us {
   background: url("../images/about-us.jpg") no-repeat center center;
 } 
+.banner-rooms {
+  background: url("../images/rooms.jpg") no-repeat center center;    
+}
 .about-us-banner-center {
   background: url("../images/child-hand-paint.jpg") no-repeat center center;
 } 
 .banner-your-visit {
   background: url("../images/plan-your-visit.jpg") no-repeat center center; 
 }
+.banner-events {
+  background: url("../images/events.jpg") no-repeat center center;    
+}
 .banner-contact-us {
   background: url("../images/contact-us.jpg") no-repeat center center;
 }
 
-.banner-home, .banner-about-us, .banner-your-visit, .banner-contact-us,.home-banner-center, .about-us-banner-center{
+.banner-home, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us, .home-banner-center, .about-us-banner-center{
   background-size: cover;
 }
 
-.banner-home, .banner-about-us, .banner-your-visit, .banner-contact-us {
+.banner-home, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us {
   height: 50vh;
 } 
 
