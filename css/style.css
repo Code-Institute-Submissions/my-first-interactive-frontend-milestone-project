@@ -117,8 +117,7 @@ margin-right: 20px;
 
 .maintitle {
   padding: 20px;
-  color: #4FB156;  /*#76F134;*/
-  text-shadow: 3px 3px 3px #FF3932;
+  color: #4FB156;  
   animation-name: headingline;
   animation-duration: 4s;
 }
@@ -128,7 +127,7 @@ margin-right: 20px;
   0%   {color:#FF3932;}  
   25%  {color:#AB6BFF;} 
   50%  {color:#FF9F30;}  
-  75%  {color:#4FB156;}   /*#87EB31;*/
+  75%  {color:#4FB156;}   
   100% {color:#00bce4;}
 }
 
@@ -146,7 +145,7 @@ margin-right: 20px;
 }
 
 .main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
-.location-wrapper, .subtitle-theme, #menu-widget-2 ul, #social-media {
+.location-wrapper, .subtitle-theme, #menu-widget-2 ul, #social-media, .copyright-statement {
     text-align: center;
 }
 
@@ -619,14 +618,21 @@ footer {
    padding: 25px;
  }
 
+
+ .copyright-statement {
+    font-size: 12px;
+ }
+/*
+#copyright-statement {
+  text-align: center;
+ }*/
+
 #menu-widget-2 ul {
-  /* text-align: center;*/
    padding: 20px;            
    display: block; 
  }
 
 #menu-widget-2 li {
-  /* display: inline-block; */
    font-size: 20px;
    padding: 10px;
  }
@@ -640,15 +646,13 @@ footer {
     text-decoration: none;
  }
 
-#social-media{
-    /*text-align: center; */     
+#social-media{    
     padding: 20px;           
     display: block; 
 }
 
 #social-media a {
     padding: 10px;
-    /*display: inline-block; */
  }
 
 #social-media a:hover{
@@ -706,6 +710,10 @@ footer {
 .first-name, .last-name{
     width: 49.5%;
  } 
+
+ .copyright-statement {
+    font-size: 15px;
+ }
 }
 
 /****** iPad only ******/
