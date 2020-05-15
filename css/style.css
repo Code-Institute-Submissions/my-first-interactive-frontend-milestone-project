@@ -26,7 +26,7 @@ margin-right: 20px;
 /* Menu Hover Style. Overridding Bootstrap's*/
 /* Home */
 .navbar-nav .nav-item.active .nav-link, .navbar-nav .nav-item:hover .nav-link {
- background-color: #4FB156; /*green*/
+ background-color: #4FB156; 
 } 
 /* About us menu */
 .navbar-nav .nav-item.active2 .nav-link, .navbar-nav .nav-item:nth-child(2):hover .nav-link {
@@ -117,7 +117,7 @@ margin-right: 20px;
 
 .maintitle {
   padding: 20px;
-  color: #76F134; /* green*/
+  color: #4FB156;  /*#76F134;*/
   text-shadow: 3px 3px 3px #FF3932;
   animation-name: headingline;
   animation-duration: 4s;
@@ -128,7 +128,7 @@ margin-right: 20px;
   0%   {color:#FF3932;}  
   25%  {color:#AB6BFF;} 
   50%  {color:#FF9F30;}  
-  75%  {color:#87EB31;}   
+  75%  {color:#4FB156;}   /*#87EB31;*/
   100% {color:#00bce4;}
 }
 
