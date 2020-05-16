@@ -145,7 +145,7 @@ margin-right: 20px;
 }
 
 .main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
-.location-wrapper, .subtitle-theme, #menu-widget-2 ul, #social-media, .copyright-statement {
+.location-wrapper, .subtitle-theme, #social-media, #location-info, .copyright-statement {
     text-align: center;
 }
 
@@ -608,6 +608,17 @@ margin-right: 20px;
 
 /***************  Footer *****************/
 /* Style footer section */
+
+.footer-title {
+    padding:5px;
+    text-align: center;  /* replica*/
+    font-size: 19px;
+}
+
+#menu-widget-2, #social-media, #location-info{    
+    padding: 15px;
+}
+
 footer {
    background-color:#1A8849; 
    color: #fafafa;
@@ -618,23 +629,18 @@ footer {
    padding: 25px;
  }
 
-
  .copyright-statement {
     font-size: 12px;
  }
-/*
-#copyright-statement {
-  text-align: center;
- }*/
 
 #menu-widget-2 ul {
-   padding: 20px;            
-   display: block; 
+  /*text-align: center; */
+  padding-left: 85px;
+  list-style: none;
  }
 
-#menu-widget-2 li {
-   font-size: 20px;
-   padding: 10px;
+#menu-widget-2 li, #location-info {
+   font-size: 18px;
  }
 
 #menu-widget-2 li a {
@@ -646,8 +652,7 @@ footer {
     text-decoration: none;
  }
 
-#social-media{    
-    padding: 20px;           
+#social-media {            
     display: block; 
 }
 
@@ -659,7 +664,7 @@ footer {
     opacity: .8;
  }
 
-#social-media a, #menu-widget-2 li{
+#social-media a /*, #menu-widget-2 li*/ {
  display: inline-block; 
  }
 
@@ -729,7 +734,11 @@ footer {
      
 .theme-wrapper {
     padding: 20px 20px 20px 30px;  
-  } 
+  }
+
+  #menu-widget-2 ul {
+   padding-left: 50px;
+ } 
 }
 
 @media only screen and (min-width : 768px) and (max-width : 900px){
@@ -738,6 +747,9 @@ footer {
     width: 40%;
     margin: 10px 10px 10px 43px;
  }
+ #menu-widget-2 ul {
+   padding-left: 100px;
+ } 
 }
 
 
@@ -777,4 +789,8 @@ footer {
  .theme-wrapper {
       padding: 20px 20px 40px 20px;
   } 
+
+#menu-widget-2 ul {
+   padding-left: 140px;
+ } 
 }
