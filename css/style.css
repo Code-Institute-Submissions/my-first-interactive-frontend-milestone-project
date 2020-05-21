@@ -67,17 +67,43 @@ margin-right: 20px;
     color: #fafafa;
  }
 
-
 .logo {
     width: 90px;
     height: 90px;
     margin-left: 20px;
 }
+/******Banner Slider on landing page **********/
+
+.banner-home1 {
+    background:url(../images/banner-home.jpg) no-repeat center center;
+}
+.banner-home2 {
+    background:url(../images/plan-your-visit.jpg) no-repeat center center;
+}
+.banner-home3 {
+    background:url(../images/happy-kids.jpg) no-repeat center center;
+}
+
+.slider {
+   -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  display:block;
+}
+
+@-webkit-keyframes fade {
+   0% {opacity: .4;}
+   100% {opacity: 1;}
+}
+
+@keyframes fade {
+    0% {opacity: .4;}
+   100% {opacity: 1;}
+}
+
 
 /**** Banner images****/
-.banner-home {
-  background: url("../images/banner-home.jpg") no-repeat center center;
-}
 .home-banner-center {
   background: url("../images/happy-kids.jpg") no-repeat center center;
 }
@@ -100,11 +126,11 @@ margin-right: 20px;
   background: url("../images/contact-us.jpg") no-repeat center center;
 }
 
-.banner-home, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us, .home-banner-center, .about-us-banner-center{
+.slider, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us, .home-banner-center, .about-us-banner-center{
   background-size: cover;
 }
 
-.banner-home, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us {
+.slider, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us {
   height: 50vh;
 }
 
@@ -112,7 +138,7 @@ margin-right: 20px;
   height: 40vh;
 }
 
-.banner-home, .home-banner-center, .about-us-banner-center {
+.slider, .home-banner-center, .about-us-banner-center {
   margin-bottom: 50px;
   margin-top: 30px;
 }
@@ -187,7 +213,6 @@ margin-right: 20px;
 
 
 /****** Business Highlights ****/
-
 .text-container{
     float: left;
     margin: 10px auto; 
@@ -668,7 +693,7 @@ footer {
    padding: 5px 5px 0px 0px;
  }
 
-.banner-home, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us {
+.slider, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us {
     height: 75vh;
  } 
  
