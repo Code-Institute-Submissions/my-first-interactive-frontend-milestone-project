@@ -175,6 +175,10 @@ margin-right: 20px;
     width: 100%;
 }
 
+.about-image, .gallery, .contact-form-wrapper, .phone-wrapper, .email-wrapper, .address {
+    margin: auto;
+}
+
 .main-text-wrapper{
     text-align: justify;
     padding-top: 20px;
@@ -196,7 +200,7 @@ margin-right: 20px;
     text-shadow: 2px 2px 2px #FF3932;
 }
 
-.subtitle, .subtitle-about, .subtitle-about {
+.subtitle, .subtitle-about, .subtitle-contact {
     padding: 30px 0px;
 } 
 
@@ -244,9 +248,6 @@ margin-right: 20px;
 }
 
 /******* Rooom Gallery *******/
-.gallery{
-   margin: auto;
-}
 
 .gallery ul {
     padding-bottom: 25px;
@@ -369,10 +370,6 @@ margin-right: 20px;
 /************ About Us Page *************/
 .about-title {
     padding: 50px 0px 30px;
-}
-
-.about-image {
-    margin: auto;
 }
 
 .about-text{
@@ -513,7 +510,7 @@ margin-right: 20px;
   }
 }
 
-/**** What Parents Are Saying section *****/
+/** What Parents Are Saying section **/
 .quote {
     width: 90%; 
     height: auto;
@@ -585,19 +582,10 @@ margin-right: 20px;
    background: #fafafa;
  }
 
-.location-wrapper {
-   margin-top: 30px;
-   margin-bottom: 30px;
- }
-
 .phone-wrapper, .email-wrapper  {
    float: left;
    width: 49%;
  }
-
-.contact-form-wrapper, .phone-wrapper, .email-wrapper{
-    margin: auto;
-}
 
 .email-wrapper {
     padding-left: 1%;
@@ -607,6 +595,21 @@ margin-right: 20px;
     color: #018fe2;
 }
 
+.location-wrapper {
+   margin: 45px auto 45px;
+   text-align: center;
+ }
+
+.address {
+    padding-top: 15px;
+    margin-left: 8.5%;
+}
+
+#googlemap {
+    height: 300px;
+    width: 100%;  
+    margin-right: 6%;
+}
 
 /***************  Footer *****************/
 /* Style footer section */
