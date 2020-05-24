@@ -6,7 +6,19 @@ hr {
    border: 0;
    border-top: 1px solid #eee;
  }
- 
+
+ .contact-icons-wrapper, .address, .theme-subtitle-wrapper {
+    padding-top: 15px;
+ }
+
+ .gallery_caption, .getdirections-btn, .gettickets-btn, .quote {
+    padding-top: 10px;
+ }
+
+.main-text-wrapper  .planyourvisit-btn {
+    padding-top: 20px;
+ }
+
 .navstyle{
   background-image: linear-gradient(#87EB31, white);
 }
@@ -72,6 +84,7 @@ margin-right: 20px;
     height: 90px;
     margin-left: 20px;
 }
+
 /******Banner Slider on landing page **********/
 
 .banner-home1 {
@@ -181,7 +194,6 @@ margin-right: 20px;
 
 .main-text-wrapper{
     text-align: justify;
-    padding-top: 20px;
 }
 
 .main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
@@ -270,7 +282,6 @@ margin-right: 20px;
     color: rgba(0,0,0,.8);
     min-height: 40px;
     width: auto;
-    padding-top: 10px;
     padding-bottom: 10px;
     opacity: .95;
     border-bottom-left-radius: 25px;
@@ -292,7 +303,6 @@ margin-right: 20px;
     background: #4FB156;
     font-size: 20px;
     letter-spacing: 3px;
-    padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -303,7 +313,6 @@ margin-right: 20px;
     width: 200px;
     font-size: 15px;
     letter-spacing: 2px;
-    padding-top: 10px;
     padding-bottom: 10px;
     margin: 40px auto 40px 15px;
     border-radius: 5px; 
@@ -350,7 +359,6 @@ margin-right: 20px;
 
 .theme-subtitle-wrapper {
     font-weight: 200;
-    padding-top: 15px;
     padding-bottom: 20px;
 }
 
@@ -515,7 +523,6 @@ margin-right: 20px;
     width: 90%; 
     height: auto;
     color: inherit;
-    padding-top: 10px;
     padding-bottom: 10px;
     margin: 0 1% 0 1%;
  }
@@ -581,16 +588,13 @@ margin-right: 20px;
 .form-control{
    background: #fafafa;
  }
-
+ 
 .phone-wrapper, .email-wrapper  {
    float: left;
-   width: 49%;
+   width: 50%;
+   padding: 5px;
  }
 
-.email-wrapper {
-    padding-left: 1%;
- }
- 
  a:hover, a:focus {
     color: #018fe2;
 }
@@ -601,14 +605,14 @@ margin-right: 20px;
  }
 
 .address {
-    padding-top: 15px;
-    margin-left: 8.5%;
+    margin-left: auto;
 }
 
 #googlemap {
     height: 300px;
     width: 100%;  
     margin-right: 6%;
+    margin-left: 6.5%;
 }
 
 /***************  Footer *****************/
@@ -665,6 +669,7 @@ footer {
     opacity: .8;
  }
 
+
 /******** Media Queries *******/
 
 @media only screen and (min-width: 768px)  {
@@ -715,6 +720,27 @@ footer {
  .copyright-statement {
     font-size: 15px;
  }
+
+.address {
+    margin-left: 8.5%;
+}
+
+#googlemap {
+    height: 300px;
+    width: 100%;  
+    margin-right: 6%;
+}
+
+.phone-wrapper, .email-wrapper{
+    width: 30%;
+}
+ .phone-wrapper {
+    margin-left:20%;
+}
+
+.email-wrapper {
+    margin-right:20%
+}
 }
 
 /****** iPad only ******/
