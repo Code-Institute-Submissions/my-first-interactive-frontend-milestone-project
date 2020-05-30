@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".title-accordion" ).accordion();
+  } );
+  </script>
+  <!-- <script>
+  $( function() {
+    $( "#title-accordionmid-top" ).accordion();
+  } );
+  </script> -->
     <title>KiddosSpot</title>
 </head>
 
@@ -49,7 +63,6 @@
             </div>
         </nav>
     </header>
-
     <section>
         <!-- Bootstrap grid approach for columns -->
         <div class="container-fluid">
@@ -57,13 +70,145 @@
                 <div class="col-12 banner-events"> </div>
             </div>
             <div class="row">
-                <div class="col-12 subtitle">
-                    <h2>Page in Construction</h2>
-                    <h3>Stay tuned!</h3>
+                <div class="col-12 subtitle-events uppercase">
+                    <h2>Events</h2>
                 </div>
             </div>
         </div>
-        <!-- container fluid -->
+        <!--List of events -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2 left-col"></div>
+                <div class="col-lg-8 col-md-12 col-sm-10 event-wrapper">
+                    <h4 class="event-header align">Week June 1st - June 7th </h4>
+                    <div class ="title-accordion">
+                        <h4>
+                            <span>
+                                <i class="fa fa-recycle icon-size"></i>
+                            </span>
+                            <span class="title-content">
+                                <a href="#" target="_blank">Recycling</a>
+                            </span>
+                        </h4>
+                        <div class="event-content">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-12 event-img">
+                                    <img src="./images/recycle.jpg" alt="Recycle" width="275" height="225" style = "width:100%;">
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-12 event-text">
+                                    <ul>
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>   
+                                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error deleniti facere, soluta laboriosam accusantium quae molestiae eligendi ea accusamus et, sit, cum adipisci consequatur ex minus possimus neque nemo. </p>
+                                </div>
+                            </div>  
+                        </div>
+                        <h4 class="event-title-wrapper align">
+                            <span>
+                                <i class="fa fa-leaf icon-size"></i>
+                            </span>
+                            <span class="title-content">
+                                <a href="" target="_blank">Let's Plan a Tree!</a>
+                            </span>
+                        </h4>
+                        <div class="event-content">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-12 event-img">
+                                    <img src="./images/plant-a-tree.jpg" alt="Plant a treet" width="275" height="225" style = "width:100%;">
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-12 event-text">
+                                    <ul>
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>   
+                                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error deleniti facere, soluta laboriosam accusantium quae molestiae eligendi ea accusamus et, sit, cum adipisci consequatur ex minus possimus neque nemo. </p>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2 left-col"></div>
+                <div class="col-lg-8 col-md-12 col-sm-10 event-wrapper">
+                    <h4 class="event-header align">Week June 15 - June 21 </h4>
+                    <div class = "title-accordion">
+                        <h4>
+                            <span>
+                                <i class="fa fa-book icon-size"></i>
+                            </span>
+                            <span class="title-content">
+                                <a href="#" target="_blank">Learning about Food</a>
+                            </span>
+                        </h4>
+                        <div class="event-content">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-12 event-img">
+                                    <img src="./images/food-class.jpg" alt="Food Class" width="275" height="225" style = "width:100%;">
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-12 event-text">
+                                    <ul>
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>   
+                                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error deleniti facere, soluta laboriosam accusantium quae molestiae eligendi ea accusamus et, sit, cum adipisci consequatur ex minus possimus neque nemo. </p>
+                                </div>
+                            </div>  
+                        </div>
+                        <h4 class="event-title-wrapper align">
+                            <span>
+                                <i class="fa fa-leaf icon-size"></i>
+                            </span>
+                            <span class="title-content">
+                                <a href="" target="_blank">Food Garden</a>
+                            </span>
+                        </h4>
+                        <div class="event-content">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-12 event-img">
+                                    <img src="./images/food-garden.jpg" alt="Food Garden" width="275" height="225" style = "width:100%;">
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-12 event-text">
+                                    <ul>
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>   
+                                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error deleniti facere, soluta laboriosam accusantium quae molestiae eligendi ea accusamus et, sit, cum adipisci consequatur ex minus possimus neque nemo. </p>
+                                </div>
+                            </div> 
+                        </div>   
+                        <h4 class="event-title-wrapper align">
+                            <span>
+                                <i class="fa fa-cutlery icon-size"></i>
+                            </span>
+                            <span class="title-content">
+                                <a href="" target="_blank">Cooking Class</a>
+                            </span>
+                        </h4>
+                        <div class="event-content">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-12 event-img">
+                                    <img src="./images/cooking-class.jpg" alt="Cooking Class" width="275" height="225" style = "width:100%;">
+                                </div>
+                                <div class="col-lg-7 col-md-7 col-sm-12 event-text">
+                                    <ul>
+                                        <li>List item one</li>
+                                        <li>List item two</li>
+                                        <li>List item three</li>
+                                    </ul>   
+                                    <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error deleniti facere, soluta laboriosam accusantium quae molestiae eligendi ea accusamus et, sit, cum adipisci consequatur ex minus possimus neque nemo. </p>
+                                </div>
+                            </div> 
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>  <!--"container-fluid"-->
     </section>
     <footer class="container-fluid">
         <div id="footer-details" class="row">

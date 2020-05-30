@@ -196,23 +196,23 @@ margin-right: 20px;
     text-align: justify;
 }
 
-.main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
+.main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .subtitle-events, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
 .location-wrapper, .subtitle-theme, #social-media, .footer-title, #location-info, .copyright-statement {
     text-align: center;
 }
 
-.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper,
+.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events,.subtitle-plan-your-visit, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper,
 .navbar .nav > li > a{
  font-family: 'Salsa', cursive, Helvetica;
  }
 
-.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit{
+.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events, .subtitle-plan-your-visit{
     font-weight: 200;
     margin-top: 20px;
     text-shadow: 2px 2px 2px #FF3932;
 }
 
-.subtitle, .subtitle-about, .subtitle-contact {
+.subtitle, .subtitle-about, .subtitle-contact, .subtitle-events {
     padding: 30px 0px;
 } 
 
@@ -224,7 +224,10 @@ margin-right: 20px;
 }
 .subtitle-plan-your-visit{
     padding: 30px 20px 20px 30px;
-    color: #FF9F30; /* orange */
+}
+
+.subtitle-plan-your-visit, .subtitle-events {
+    color:#FF9F30;
 }
 
 
@@ -351,7 +354,7 @@ margin-right: 20px;
 /* Built gradient background code with: https://cssgradient.io/gradient-backgrounds/ using the colors from my website*/
 .theme-wrapper {
     background-color: #ff9f30;
-    background: linear-gradient(209deg, #ff9f30 0%, #ff3232 24%, #ab6bff 49%, #76f134 75%, #00bce4 100%) no-repeat center center;
+    background: linear-gradient(209deg, #f8f8f8 0%, #ff3232 24%, #ab6bff 49%, #76f134 75%, #00bce4 100%) no-repeat center center;
     background-size: cover;
     font-size: larger;
     margin: 20px auto 0px;
@@ -373,7 +376,6 @@ margin-right: 20px;
 .theme-text-wrapper {
     padding: 10px; 
 }
-
 
 /************ About Us Page *************/
 .about-title {
@@ -570,6 +572,71 @@ margin-right: 20px;
     line-height: normal; 
   }
 
+/************* Events ********************/
+#left-col{
+    background-color: #FF9F30;
+    height: 1000px;
+    margin-left:100px;
+}
+
+.event-header {
+    background-color: #FF9F30;
+    height: 50px;
+    width: 100%;
+    color:#fafafa;
+}
+
+.align {
+    padding-left: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 0px;
+}
+
+.event-title-wrapper:hover {
+    background: rgb(248, 209, 125);
+ }
+
+.icon-size {
+    font-size:30px;
+}
+
+.title-content > a {
+    position: relative;
+    padding: 10px;
+    bottom: 5px;
+}
+
+.event-wrapper {
+    padding-bottom: 20px;
+}
+
+.event-img {
+    padding: 10px;
+}
+
+.event-text{
+    padding: 20px;
+
+}
+
+/***** Styling Accordion Effect ******/
+
+.title-accordion {
+    margin-top: 1px;
+    zoom: 1;
+}
+
+/** jQuery style overide **/
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
+    color: black!important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background-color:  rgb(248, 209, 125) !important;
+    font-weight: normal !important;
+    color: black !important;
+}
 
 /************* Contact us page *************/
 .contact-form-wrapper {
@@ -815,4 +882,9 @@ footer {
 #menu-widget-2 ul {
    padding-left: 140px;
  } 
+
+.event-wraper {
+    padding-left:0px;
+}
+
 }
