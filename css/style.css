@@ -11,11 +11,11 @@ hr {
     padding-top: 15px;
  }
 
- .gallery_caption, .getdirections-btn, .gettickets-btn, .quote {
+ .gallery_caption, .getdirections-btn, .gettickets-btn, .btn-reserve, .quote {
     padding-top: 10px;
  }
 
-.main-text-wrapper  .planyourvisit-btn {
+.main-text-wrapper, .planyourvisit-btn {
     padding-top: 20px;
  }
 
@@ -71,11 +71,11 @@ margin-right: 20px;
     transition: all 250ms ease-in-out;
 }
 
- .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, .btn-submit, #science, #sports, #arts, #games, .theme-subtitle-wrapper{
+ .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, .btn-submit, .btn-signup, .btn-signup:hover, #science, #sports, #arts, #games, .theme-subtitle-wrapper{
     border-radius: 16px;
 }
 
- .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, .btn-submit, #science, #sports, #arts, #games, .theme-wrapper, .theme-subtitle-wrapper, footer {
+ .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, .btn-submit, .btn-signup, .btn-signup:hover, .btn-reserve, .btn-reserve:hover, #science, #sports, #arts, #games, .theme-wrapper, .theme-subtitle-wrapper, footer {
     color: #fafafa;
  }
 
@@ -184,7 +184,7 @@ margin-right: 20px;
     text-transform: uppercase;
 }
 
-.main-text-wrapper, .main-image-wrapper, .text-container, .theme-wrapper, .dotted-separator, .first-name, .last-name{
+.main-text-wrapper, .main-image-wrapper, .text-container, .theme-wrapper, .dotted-separator, .first-name, .last-name {
     width: 100%;
 }
 
@@ -196,12 +196,12 @@ margin-right: 20px;
     text-align: justify;
 }
 
-.main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .subtitle-events, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
-.location-wrapper, .subtitle-theme, #social-media, .footer-title, #location-info, .copyright-statement {
+.main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .subtitle-events, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .btn-reserve, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
+.location-wrapper, .subtitle-theme, #social-media, .footer-title, #location-info, .copyright-statement, .location-wrapper {
     text-align: center;
 }
 
-.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events,.subtitle-plan-your-visit, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .theme-subtitle-wrapper,
+.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events,.subtitle-plan-your-visit, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .btn-reserve, .theme-subtitle-wrapper,
 .navbar .nav > li > a{
  font-family: 'Salsa', cursive, Helvetica;
  }
@@ -312,9 +312,10 @@ margin-right: 20px;
     border-radius: 10px;
 }
 
-.getdirections-btn, .gettickets-btn {
+.getdirections-btn, .gettickets-btn, .btn-reserve {
     width: 200px;
     font-size: 15px;
+    font-weight: bold;
     letter-spacing: 2px;
     padding-bottom: 10px;
     margin: 40px auto 40px 15px;
@@ -333,7 +334,20 @@ margin-right: 20px;
     font-weight: 700;
  }
 
- .getdirections-btn, .gettickets-btn, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover {
+.btn-signup {
+    background: #FF9F30 !important;
+  /*  background: #FF9F30; */
+    font-weight: 700;
+    text-align: right;
+ }
+
+.btn-signup:hover {
+    background: rgb(207, 120, 21) !important;
+   /* font-weight: 700;
+    text-align: right; */
+ }
+
+ .getdirections-btn, .gettickets-btn,.gettickets-btn:hover, .getdirections-btn:hover {
     background: #FF9F30;
 }
 
@@ -342,10 +356,21 @@ margin-right: 20px;
 }
 
 .btn-submit:hover {
-    background: #0099E4 !important;
+    background: #0099E4 !important;   
  }
 
-.planyourvisit-btn, .getdirections-btn, .gettickets-btn, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover{
+.btn-reserve:hover {
+    background:rgb(14, 90, 47);
+} 
+
+
+ .btn-reserve {
+     background:#1A8849;
+     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.3); 
+     width:150px;
+ }
+
+.planyourvisit-btn, .getdirections-btn, .gettickets-btn, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-reserve, .btn-reserve:hover{
     text-decoration: none;
 }
 
@@ -617,7 +642,56 @@ margin-right: 20px;
 
 .event-text{
     padding: 20px;
+}
 
+#reserve-btn {
+    position: fixed;
+    z-index: 99999 !important;
+    bottom: 0px;
+    right: 0px ;
+    left: 0px;
+    margin: 5% auto;
+}
+
+ #boxes .window {
+    display: none;
+    position: fixed;
+    left: 35%;
+    top:20%; 
+    padding: 20px 10px 20px 10px;
+    border: 1px solid #FF9F30;
+    border-radius: 5px;
+    z-index: 9000; /*1; *//*9*/
+    background-color: rgb(245, 220, 167);
+    text-align: justify;
+    }
+
+.event-form-header{
+    text-align:center;
+    color: black;
+    padding-top: 15px;
+    padding-bottom:25px;
+}
+
+.closewindow {
+    position: absolute;
+    top:8px;
+    right:10px;
+    cursor:pointer;
+    font-size: 1em;
+}
+
+.closewindow:hover {
+    color:black;
+    text-decoration:none;
+}
+
+/* Z-index of #mask must lower than #boxes .window */
+#mask {
+  position:absolute;
+  z-index:8000;
+ background-color: rgba(0, 0, 0, 0.6); 
+  display:none;
 }
 
 /***** Styling Accordion Effect ******/
@@ -627,7 +701,7 @@ margin-right: 20px;
     zoom: 1;
 }
 
-/** jQuery style overide **/
+/** jQuery accordion style overide **/
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited, a.ui-button, a:link.ui-button, a:visited.ui-button, .ui-button {
     color: black!important;
 }
@@ -668,7 +742,6 @@ margin-right: 20px;
 
 .location-wrapper {
    margin: 45px auto 45px;
-   text-align: center;
  }
 
 .address {
@@ -828,6 +901,11 @@ footer {
   #menu-widget-2 ul {
    padding-left: 50px;
  } 
+
+ #reserve-btn {
+    margin-right: 15px;
+    margin-bottom: 20px
+}
 }
 
 @media only screen and (min-width : 768px) and (max-width : 900px){
@@ -887,4 +965,7 @@ footer {
     padding-left:0px;
 }
 
+#reserve-btn {
+    margin-right: 20px;
+}
 }

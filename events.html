@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,22 +11,65 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://kit.fontawesome.com/1a947358a4.js" crossorigin="anonymous"></script>
      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
   <script>
   $( function() {
     $( ".title-accordion" ).accordion();
   } );
   </script>
-  <!-- <script>
-  $( function() {
-    $( "#title-accordionmid-top" ).accordion();
-  } );
-  </script> -->
-    <title>KiddosSpot</title>
-</head>
 
+  <title>KiddosSpot</title>
+
+ <script type="text/javascript">
+    $(document).ready(function() {	
+
+	//select all the a tag with name equal to modal
+	$('a[name=modal]').click(function(e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		//Get the A tag
+		var id = $(this).attr('href');
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set height and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeTo(300, 0.3);
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+	
+		//transition effect
+        $(id).css("display", "block");
+		$(id).fadeIn(300); 
+	});
+	
+	//if close button is clicked
+	$('.window .closewindow').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		$('#mask, .window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});			
+	
+});
+</script>
+
+</head>
 <body>
     <header>
         <!-- Used Bootstrap for basic nav. EGB -->
@@ -65,6 +107,7 @@
     </header>
     <section>
         <!-- Bootstrap grid approach for columns -->
+        <div id="mask"></div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 banner-events"> </div>
@@ -102,12 +145,50 @@
                                         <li>List item three</li>
                                     </ul>   
                                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error deleniti facere, soluta laboriosam accusantium quae molestiae eligendi ea accusamus et, sit, cum adipisci consequatur ex minus possimus neque nemo. </p>
+                                    <div id="boxes">
+                                      <div id="eventForm" class="window">
+                                        <h5 class="event-form-header">Event Signup Form </h5>
+                                        <form onsubmit="return sendEmail(this);">
+                                            <fieldset>
+                                                <div class="form-group first-name">
+                                                    <label for="fname">First Name *</label>
+                                                    <input type="text" class="form-control"
+                                                    id="fname" name="fname" placeholder="First Name"
+                                                    required/>
+                                                </div>
+                                                <div class="form-group last-name">
+                                                    <label for="lname">Last Name *</label>
+                                                    <input type="text" class="form-control" id="lname" name="lname"
+                                                    placeholder="Last Name"
+                                                    required/>
+                                                </div>
+                                                <br>
+                                            </fieldset>
+                                            <div class="form-group">
+                                                <label for="eventname">Event Name *</label>
+                                                <input type="text" class="form-control" id="eventname" name="eventname"
+                                                placeholder="Event Name"
+                                                required size="50"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email">Email address *</label>
+                                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required/>
+                                                <small id="emailHelp" class="form-text text-muted"
+                                                    >We'll never share your email with anyone else.</small>
+                                            </div>
+                                            <div style="text-align: center;">
+                                                <button type="submit" class="btn btn-signup uppercase">Submit</button>
+                                            </div>
+		                                    <a class="closewindow" href="#">Close it</a>
+                                        </form>
+                                      </div>
+                                    </div>
                                 </div>
                             </div>  
                         </div>
                         <h4 class="event-title-wrapper align">
                             <span>
-                                <i class="fa fa-leaf icon-size"></i>
+                                <i class="fas fa-tree icon-size"></i>
                             </span>
                             <span class="title-content">
                                 <a href="" target="_blank">Let's Plan a Tree!</a>
@@ -161,7 +242,7 @@
                         </div>
                         <h4 class="event-title-wrapper align">
                             <span>
-                                <i class="fa fa-leaf icon-size"></i>
+                                <i class="fas fa-seedling icon-size"></i>
                             </span>
                             <span class="title-content">
                                 <a href="" target="_blank">Food Garden</a>
@@ -184,7 +265,7 @@
                         </div>   
                         <h4 class="event-title-wrapper align">
                             <span>
-                                <i class="fa fa-cutlery icon-size"></i>
+                                <i class="fas fa-cloud-meatball icon-size"></i>
                             </span>
                             <span class="title-content">
                                 <a href="" target="_blank">Cooking Class</a>
@@ -209,8 +290,10 @@
                 </div>
             </div>
         </div>  <!--"container-fluid"-->
+            <a class="btn btn-reserve uppercase" id="reserve-btn" href="#eventForm" name="modal">SignUp</a>
     </section>
     <footer class="container-fluid">
+
         <div id="footer-details" class="row">
             <div class="col-sm-4">
                 <div class="footer-title">Quick Links</div>
@@ -263,6 +346,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
