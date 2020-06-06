@@ -650,7 +650,7 @@ margin-right: 20px;
     bottom: 0px;
     right: 0px ;
     left: 0px;
-    margin: 5% auto;
+    margin: 1% auto;
 }
 
  #boxes .window {
@@ -966,6 +966,6 @@ footer {
 }
 
 #reserve-btn {
-    margin-right: 20px;
+    margin-right: 75px;
 }
 }
