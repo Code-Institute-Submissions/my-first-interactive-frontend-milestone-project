@@ -13,8 +13,14 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <script src="https://kit.fontawesome.com/1a947358a4.js" crossorigin="anonymous"></script>
-     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("user_q4NdX6hK4WfRlld13gb3E");
+    })();
+    </script>
 
   <script>
   $( function() {
@@ -148,7 +154,7 @@
                                     <div id="boxes">
                                       <div id="eventForm" class="window">
                                         <h5 class="event-form-header">Event Signup Form </h5>
-                                        <form onsubmit="return sendEmail(this);">
+                                        <form onsubmit="return sendEventEmail(this);">
                                             <fieldset>
                                                 <div class="form-group first-name">
                                                     <label for="fname">First Name *</label>
@@ -169,6 +175,10 @@
                                                 <input type="text" class="form-control" id="eventname" name="eventname"
                                                 placeholder="Event Name"
                                                 required size="50"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="participantcount">How many children in your group? *</label>
+                                                 <input type="number"  id="participantcount" name="participantcount"/>
                                             </div>
                                             <div class="form-group">
                                                 <label for="email">Email address *</label>
@@ -346,6 +356,11 @@
             </div>
         </div>
     </footer>
+    <script
+      async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCJkivD_PXrLLM2TzQtPgkNYzD0JFYajA&callback=initMap"
+    ></script>
+    <script src="js/sendEventEmail.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

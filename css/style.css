@@ -71,7 +71,7 @@ margin-right: 20px;
     transition: all 250ms ease-in-out;
 }
 
- .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, .btn-submit, .btn-signup, .btn-signup:hover, #science, #sports, #arts, #games, .theme-subtitle-wrapper{
+ .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, /*.planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, */ .btn-submit, .btn-signup, .btn-signup:hover, #science, #sports, #arts, #games, .theme-subtitle-wrapper{
     border-radius: 16px;
 }
 
@@ -318,11 +318,11 @@ margin-right: 20px;
     font-weight: bold;
     letter-spacing: 2px;
     padding-bottom: 10px;
-    margin: 40px auto 40px 15px;
+    margin: 40px auto 10px 15px;
     border-radius: 5px; 
 }
 
-.planyourvisit-btn, .getdirections-btn, .gettickets-btn{
+.planyourvisit-btn, .getdirections-btn, .gettickets-btn {
     color: black;
     font-weight: bold;
     transition: all 250ms ease-in-out;
@@ -347,7 +347,7 @@ margin-right: 20px;
     text-align: right; */
  }
 
- .getdirections-btn, .gettickets-btn,.gettickets-btn:hover, .getdirections-btn:hover {
+ .getdirections-btn, .gettickets-btn,.gettickets-btn:hover, .getdirections-btn:hover{
     background: #FF9F30;
 }
 
@@ -657,7 +657,7 @@ margin-right: 20px;
     display: none;
     position: fixed;
     left: 35%;
-    top:20%; 
+    top:15%; 
     padding: 20px 10px 20px 10px;
     border: 1px solid #FF9F30;
     border-radius: 5px;
