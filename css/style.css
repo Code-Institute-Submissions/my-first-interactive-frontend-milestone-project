@@ -243,7 +243,7 @@ margin-right: 20px;
 }
 
 /* Transform effect code taken from Avada's theme */
-.room1:hover, .room2:hover, .room3:hover, .room4:hover {
+.room-img:hover {
     transform: perspective(1000px) scale(1.03);
     box-shadow: 0 0 10px #87EB31;
 }
@@ -264,6 +264,16 @@ margin-right: 20px;
 
 /******* Rooom Gallery *******/
 
+#room1 {
+    display: none;
+    position:fixed;
+    top: 20px;
+    left:20px;
+    /*transform: perspective(1000px) scale(1.03);*/
+}
+
+
+
 .gallery ul {
     padding-bottom: 25px;
     padding-left: 0px;
@@ -278,6 +288,7 @@ margin-right: 20px;
     clear: both;
     border-radius: 25px;
     padding: 0px;
+    cursor: pointer; /*eb*/
 }
 
 .gallery_caption {
@@ -295,7 +306,7 @@ margin-right: 20px;
     display: inline-block;
 }
 
-.room1  img, .room2 img, .room3 img, .room4 img {
+.room-img  img {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
@@ -362,7 +373,6 @@ margin-right: 20px;
 .btn-reserve:hover {
     background:rgb(14, 90, 47);
 } 
-
 
  .btn-reserve {
      background:#1A8849;
@@ -475,9 +485,9 @@ margin-right: 20px;
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #87EB31;
+  border: medium solid rgb(185, 137, 247);*/
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #87EB31;
+  border-color: transparent transparent transparent /*#87EB31;*/ #AB6BFF;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -489,9 +499,9 @@ margin-right: 20px;
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #87EB31;
+  border: medium solid rgb(185, 137, 247); /*#87EB31; #AB6BFF;*/
   border-width: 10px 10px 10px 0;
-  border-color: transparent #87EB31 transparent transparent;
+  border-color: transparent /*#87EB31*/ /*#AB6BFF*/ rgb(185, 137, 247) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -507,7 +517,7 @@ margin-right: 20px;
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: #87EB31; /*==> green */ 
+  background-color: rgb(185, 137, 247); /*#AB6BFF;*/ /*#87EB31;*/ /*==> green */ 
   position: relative;
   border-radius: 6px;
 }
@@ -529,9 +539,9 @@ margin-right: 20px;
 /* Make sure that all arrows are pointing leftwards */
   .container-2::before {
     left: 60px;
-    border: medium solid #87EB31;
+    border: medium solid /*#87EB31;*/ /*#AB6BFF;*/ rgb(185, 137, 247);
     border-width: 10px 10px 10px 0;
-    border-color: transparent #87EB31 transparent transparent;
+    border-color: transparent /*#87EB31*/ /*#AB6BFF*/ rgb(185, 137, 247)transparent transparent;
   }
 
 /* Make sure all gallery-btn are at the same spot */
@@ -690,11 +700,12 @@ margin-right: 20px;
 #mask {
   position:absolute;
   z-index:8000;
- background-color: rgba(0, 0, 0, 0.6); 
+  background-color: rgba(0, 0, 0, 0.6); 
   display:none;
 }
 
-/***** Styling Accordion Effect ******/
+
+/**Styling Accordion Effect ***/
 
 .title-accordion {
     margin-top: 1px;
@@ -754,6 +765,77 @@ margin-right: 20px;
     margin-right: 6%;
     margin-left: 6.5%;
 }
+
+
+/*****************Rooms*******************/
+
+#modal {
+  position:absolute;
+  z-index:8000;
+  background-color: rgba(0, 0, 0, 0.6); 
+  display:none;
+  width: 100%; 
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 900px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+
 
 /***************  Footer *****************/
 /* Style footer section */
