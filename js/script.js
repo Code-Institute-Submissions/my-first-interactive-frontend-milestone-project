@@ -17,22 +17,26 @@ var roomImg3 = document.getElementById("myImg3");
 var roomImg4 = document.getElementById("myImg4");
 var roomdesc1 = document.getElementById("room-desc-1");
 var room = document.getElementById("img01");
+var imgLayer1 = document.getElementById("layer1");
+var imgLayer2 = document.getElementById("layer2");
+var imgLayer3 = document.getElementById("layer3");
+var imgLayer4 = document.getElementById("layer4");
 var captionText = document.getElementById("caption");
 
-  roomImg.onclick = function(){
+  imgLayer1.onclick = function(){
   modal.style.display = "block";
-  room.src = this.src;
+  room.src = roomImg.src;  /*this.src */
   captionText.innerHTML = this.alt;
   }
-  roomImg2.onclick = function(){
+  imgLayer2.onclick = function(){
   modal.style.display = "block";
   room.src = this.src;
   }
-  roomImg3.onclick = function(){
+  imgLayer3.onclick = function(){
   modal.style.display = "block";
   room.src = this.src;
   }
-  roomImg4.onclick = function(){
+  imgLayer4.onclick = function(){
   modal.style.display = "block";
   room.src = this.src;
   }  
@@ -61,4 +65,3 @@ function showSlidesAuto(n) {
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlidesAuto, 4000); 
 }
-
