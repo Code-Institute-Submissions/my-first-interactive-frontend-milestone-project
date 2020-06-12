@@ -30,15 +30,15 @@ var captionText = document.getElementById("caption");
   }
   imgLayer2.onclick = function(){
   modal.style.display = "block";
-  room.src = this.src;
+  room.src = roomImg2.src;
   }
   imgLayer3.onclick = function(){
   modal.style.display = "block";
-  room.src = this.src;
+  room.src = roomImg3.src;
   }
   imgLayer4.onclick = function(){
   modal.style.display = "block";
-  room.src = this.src;
+  room.src = roomImg4.src;
   }  
 
 // Get the <span> element that closes the modal
