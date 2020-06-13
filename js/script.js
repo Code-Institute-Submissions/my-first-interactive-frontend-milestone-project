@@ -15,18 +15,28 @@ var roomImg = document.getElementById("myImg");
 var roomImg2 = document.getElementById("myImg2");
 var roomImg3 = document.getElementById("myImg3");
 var roomImg4 = document.getElementById("myImg4");
+var roomImg5 = document.getElementById("myImg5");
+var roomImg6 = document.getElementById("myImg6");
+var roomImg7 = document.getElementById("myImg7");
+var roomImg8 = document.getElementById("myImg8");
+var roomImg9 = document.getElementById("myImg9");
 var roomdesc1 = document.getElementById("room-desc-1");
 var room = document.getElementById("img01");
 var imgLayer1 = document.getElementById("layer1");
 var imgLayer2 = document.getElementById("layer2");
 var imgLayer3 = document.getElementById("layer3");
 var imgLayer4 = document.getElementById("layer4");
+var imgLayer5 = document.getElementById("layer5");
+var imgLayer6 = document.getElementById("layer6");
+var imgLayer7 = document.getElementById("layer7");
+var imgLayer8 = document.getElementById("layer8");
+var imgLayer9 = document.getElementById("layer9");
 var captionText = document.getElementById("caption");
 
   imgLayer1.onclick = function(){
   modal.style.display = "block";
   room.src = roomImg.src;  /*this.src */
-  captionText.innerHTML = this.alt;
+  captionText.innerHTML = roomImg.alt;
   }
   imgLayer2.onclick = function(){
   modal.style.display = "block";
@@ -39,6 +49,26 @@ var captionText = document.getElementById("caption");
   imgLayer4.onclick = function(){
   modal.style.display = "block";
   room.src = roomImg4.src;
+  }
+  imgLayer5.onclick = function(){
+  modal.style.display = "block";
+  room.src = roomImg5.src;
+  } 
+  imgLayer6.onclick = function(){
+  modal.style.display = "block";
+  room.src = roomImg6.src;
+  } 
+  imgLayer7.onclick = function(){
+  modal.style.display = "block";
+  room.src = roomImg7.src;
+  } 
+  imgLayer8.onclick = function(){
+  modal.style.display = "block";
+  room.src = roomImg8.src;
+  } 
+  imgLayer9.onclick = function(){
+  modal.style.display = "block";
+  room.src = roomImg9.src;
   }  
 
 // Get the <span> element that closes the modal

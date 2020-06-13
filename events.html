@@ -151,48 +151,6 @@
                                         <li>List item three</li>
                                     </ul>   
                                     <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita error deleniti facere, soluta laboriosam accusantium quae molestiae eligendi ea accusamus et, sit, cum adipisci consequatur ex minus possimus neque nemo. </p>
-                                    <div id="boxes">
-                                      <div id="eventForm" class="window">
-                                        <h5 class="event-form-header">Event Signup Form </h5>
-                                        <form onsubmit="return sendEventEmail(this);">
-                                            <fieldset>
-                                                <div class="form-group first-name">
-                                                    <label for="fname">First Name *</label>
-                                                    <input type="text" class="form-control"
-                                                    id="fname" name="fname" placeholder="First Name"
-                                                    required/>
-                                                </div>
-                                                <div class="form-group last-name">
-                                                    <label for="lname">Last Name *</label>
-                                                    <input type="text" class="form-control" id="lname" name="lname"
-                                                    placeholder="Last Name"
-                                                    required/>
-                                                </div>
-                                                <br>
-                                            </fieldset>
-                                            <div class="form-group">
-                                                <label for="eventname">Event Name *</label>
-                                                <input type="text" class="form-control" id="eventname" name="eventname"
-                                                placeholder="Event Name"
-                                                required size="50"/>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="participantcount">How many children in your group? *</label>
-                                                 <input type="number"  id="participantcount" name="participantcount"/>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="email">Email address *</label>
-                                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required/>
-                                                <small id="emailHelp" class="form-text text-muted"
-                                                    >We'll never share your email with anyone else.</small>
-                                            </div>
-                                            <div style="text-align: center;">
-                                                <button type="submit" class="btn btn-signup uppercase">Submit</button>
-                                            </div>
-		                                    <a class="closewindow" href="#">Close it</a>
-                                        </form>
-                                      </div>
-                                    </div>
                                 </div>
                             </div>  
                         </div>
@@ -299,6 +257,41 @@
                     </div>
                 </div>
             </div>
+            <div id="boxes">
+                <div id="eventForm" class="window">
+                    <h5 class="event-form-header">Event Signup Form </h5>
+                    <form onsubmit="return sendEventEmail(this);">
+                        <fieldset>
+                            <div class="form-group first-name">
+                                <label for="fname">First Name *</label>
+                                <input type="text" class="form-control" id="fname" name="fname" placeholder="First Name" required/>
+                            </div>
+                            <div class="form-group last-name">
+                                <label for="lname">Last Name *</label>
+                                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last Name" required/>
+                            </div>
+                            <br>
+                        </fieldset>
+                        <div class="form-group"> 
+                            <label for="eventname">Event Name *</label>
+                            <input type="text" class="form-control" id="eventname" name="eventname" placeholder="Event Name" required size="50"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="participantcount">How many children in your group? *</label>
+                            <input type="number"  id="participantcount" name="participantcount"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address *</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required/>
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div style="text-align: center;">
+                            <button type="submit" class="btn btn-signup uppercase">Submit</button>
+                        </div>
+		                <a class="closewindow" href="#">Close it</a>
+                    </form>
+                </div>
+            </div>    
         </div>  <!--"container-fluid"-->
             <a class="btn btn-reserve uppercase" id="reserve-btn" href="#eventForm" name="modal">SignUp</a>
     </section>
