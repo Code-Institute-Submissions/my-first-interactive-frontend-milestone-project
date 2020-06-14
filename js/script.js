@@ -35,7 +35,7 @@ var captionText = document.getElementById("caption");
 
   imgLayer1.onclick = function(){
   modal.style.display = "block";
-  room.src = roomImg.src;  /*this.src */
+  room.src = roomImg.src;
   captionText.innerHTML = roomImg.alt;
   }
   imgLayer2.onclick = function(){
@@ -80,7 +80,8 @@ span.onclick = function() {
 }
 });
 
-
+/* Slideshow banner functionality on index.html */
+/* This code was partially taken from W3 Schools' website examples */
 var slideIndex = 0;
 showSlidesAuto(slideIndex);
 

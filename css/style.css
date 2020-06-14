@@ -765,19 +765,26 @@ margin-right: 20px;
 /*****************Rooms*******************/
 
 #modal {
-  position:absolute;
+  position: fixed;
   z-index:8000;
   background-color: rgba(0, 0, 0, 0.6); 
   display:none;
-  width: 100%; 
+  width: 100%;
+  height: 100%;
+  top:18%;
+  margin: auto;
+  text-align:center;
+ padding-top:8px;
 }
 
 /* Modal Content (Image) */
 .modal-content {
   margin: auto;
   display: block;
-  width: 80%;
+  width: 100%;
+  height:auto;
   max-width: 900px;
+  max-height:500px;
 }
 
 /* Add Animation - Zoom in the Modal */
@@ -790,16 +797,6 @@ margin-right: 20px;
   from {transform:scale(0)}
   to {transform:scale(1)}
 }
-
-/*
-#myImg, #myImg2, #myImg3, #myImg4 {
-  cursor: pointer;
-  transition: 0.3s;
-}*/
-
-
-/*#myImg:hover, #myImg2:hover, #myImg3:hover, #myImg4:hover {opacity: 0.7;}*/
-
 
 /* The Close Button */
 .close {
