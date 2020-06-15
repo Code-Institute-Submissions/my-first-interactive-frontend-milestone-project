@@ -98,7 +98,7 @@ margin-right: 20px;
 }
 
 .slider {
-   -webkit-animation-name: fade;
+  -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
@@ -246,7 +246,6 @@ margin-right: 20px;
 .room-img:hover {
     transform: perspective(1000px) scale(1.03);
     box-shadow: 0 0 10px #87EB31;
-   /* opacity: 0.7;*/
     cursor: pointer;
     transition: 0.3s;
 }
@@ -281,7 +280,7 @@ margin-right: 20px;
     clear: both;
     border-radius: 25px;
     padding: 0px;
-    cursor: pointer; /*eb*/
+    cursor: pointer; 
 }
 
 .gallery_caption {
@@ -382,8 +381,7 @@ margin-right: 20px;
 
 /* Built gradient background code with: https://cssgradient.io/gradient-backgrounds/ using the colors from my website*/
 .theme-wrapper {
-    background-color: #ff9f30;
-    background: linear-gradient(209deg, #f8f8f8 0%, #ff3232 24%, #ab6bff 49%, #76f134 75%, #00bce4 100%) no-repeat center center;
+    background: linear-gradient(209deg, #76f134 0%, #ab6bff 24%, #ab6bff 49%, #76f134 75%, #76f134 100%) no-repeat center center;
     background-size: cover;
     font-size: larger;
     margin: 20px auto 0px;
@@ -479,9 +477,9 @@ margin-right: 20px;
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid rgb(185, 137, 247);*/
+  border: medium solid rgb(185, 137, 247);
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent /*#87EB31;*/ #AB6BFF;
+  border-color: transparent transparent transparent #AB6BFF;
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -493,9 +491,9 @@ margin-right: 20px;
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid rgb(185, 137, 247); /*#87EB31; #AB6BFF;*/
+  border: medium solid rgb(185, 137, 247);
   border-width: 10px 10px 10px 0;
-  border-color: transparent /*#87EB31*/ /*#AB6BFF*/ rgb(185, 137, 247) transparent transparent;
+  border-color: transparent  rgb(185, 137, 247) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -511,7 +509,7 @@ margin-right: 20px;
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color: rgb(185, 137, 247); /*#AB6BFF;*/ /*#87EB31;*/ /*==> green */ 
+  background-color: rgb(185, 137, 247);
   position: relative;
   border-radius: 6px;
 }
@@ -533,9 +531,9 @@ margin-right: 20px;
 /* Make sure that all arrows are pointing leftwards */
   .container-2::before {
     left: 60px;
-    border: medium solid /*#87EB31;*/ /*#AB6BFF;*/ rgb(185, 137, 247);
+    border: medium solid  rgb(185, 137, 247);
     border-width: 10px 10px 10px 0;
-    border-color: transparent /*#87EB31*/ /*#AB6BFF*/ rgb(185, 137, 247)transparent transparent;
+    border-color: transparent rgb(185, 137, 247)transparent transparent;
   }
 
 /* Make sure all gallery-btn are at the same spot */
@@ -764,17 +762,26 @@ margin-right: 20px;
 
 /*****************Rooms*******************/
 
+.room-desc {
+    color:#fafafa !important; 
+    font-size:20px;
+    text-align:center;
+    margin:auto;
+    padding: 10px;
+}
+
+
 #modal {
   position: fixed;
   z-index:8000;
   background-color: rgba(0, 0, 0, 0.6); 
   display:none;
   width: 100%;
-  height: 100%;
   top:18%;
+  left: 0.1px;
   margin: auto;
   text-align:center;
- padding-top:8px;
+  padding-top:8px;
 }
 
 /* Modal Content (Image) */
@@ -800,7 +807,6 @@ margin-right: 20px;
 
 /* The Close Button */
 .close {
-  position: absolute;
   top: 15px;
   right: 35px;
   color: #f1f1f1;
@@ -816,17 +822,6 @@ margin-right: 20px;
   cursor: pointer;
 }
 
-/* Caption of Modal Image */
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
 /*******************/
 .overlay {
   position: absolute;
