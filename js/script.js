@@ -31,12 +31,10 @@ var imgLayer6 = document.getElementById("layer6");
 var imgLayer7 = document.getElementById("layer7");
 var imgLayer8 = document.getElementById("layer8");
 var imgLayer9 = document.getElementById("layer9");
-var captionText = document.getElementById("caption");
 
   imgLayer1.onclick = function(){
   modal.style.display = "block";
   room.src = roomImg.src;
-  captionText.innerHTML = roomImg.alt;
   }
   imgLayer2.onclick = function(){
   modal.style.display = "block";
@@ -93,6 +91,6 @@ function showSlidesAuto(n) {
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlidesAuto, 4000); 
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlidesAuto,4000); 
 }

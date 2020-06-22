@@ -7,7 +7,12 @@ hr {
    border-top: 1px solid #eee;
  }
 
- .contact-icons-wrapper, .address, .theme-subtitle-wrapper {
+ 
+.uppercase {
+    text-transform: uppercase;
+}
+
+ .contact-icons-wrapper, .address, .theme-subtitle-wrapper, .event-form-header {
     padding-top: 15px;
  }
 
@@ -71,11 +76,11 @@ margin-right: 20px;
     transition: all 250ms ease-in-out;
 }
 
- .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover,.btn-submit, .btn-signup, .btn-signup:hover, #science, #sports, #arts, #games, .theme-subtitle-wrapper{
+ .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover,.btn-signup, .btn-submit, #science, #sports, #arts, #games, .theme-subtitle-wrapper{
     border-radius: 16px;
 }
 
- .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, .btn-submit, .btn-signup, .btn-signup:hover,       #reserve-btn:hover, .btn-reserve:hover, #science, #sports, #arts, #games, .theme-wrapper, .theme-subtitle-wrapper, footer {
+ .navbar-nav .nav-item:hover .nav-link, .nav-item:nth-child(2):hover, .nav-item:nth-child(3):hover, .nav-item:nth-child(4):hover, .nav-item:nth-child(5):hover, .nav-item:nth-child(6):hover, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-submit:hover, .btn-submit, .btn-signup, .btn-signup:hover, #reserve-btn:hover, .btn-reserve:hover, #science, #sports, #arts, #games, .theme-wrapper, .theme-subtitle-wrapper, footer {
     color: #fafafa;
  }
 
@@ -83,6 +88,48 @@ margin-right: 20px;
     width: 90px;
     height: 90px;
     margin-left: 20px;
+}
+
+.about-image, .gallery, .contact-form-wrapper, .phone-wrapper, .email-wrapper, .address, .modal-content, #modal {
+    margin: auto;
+}
+
+.main-text-wrapper, #boxes .window{
+    text-align: justify;
+}
+
+.main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .subtitle-events, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .btn-reserve, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
+.location-wrapper, .subtitle-theme, #social-media, .footer-title, #location-info, .copyright-statement, .location-wrapper, .text {
+    text-align: center;
+}
+
+.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events,.subtitle-plan-your-visit, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .btn-reserve, .theme-subtitle-wrapper,
+.navbar .nav > li > a{
+ font-family: 'Salsa', cursive, Helvetica;
+ }
+
+.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events, .subtitle-plan-your-visit{
+    font-weight: 200;
+    margin-top: 20px;
+    text-shadow: 2px 2px 2px #FF3932;
+}
+
+.subtitle, .subtitle-about, .subtitle-contact, .subtitle-events {
+    padding: 30px 0px;
+} 
+
+.subtitle-about{
+    color: #AB6BFF; /* purple */   
+}
+.subtitle-contact{
+    color: #00bce4; /* blue */
+}
+.subtitle-plan-your-visit{
+    padding: 30px 20px 20px 30px;
+}
+
+.subtitle-plan-your-visit, .subtitle-events {
+    color:#FF9F30;
 }
 
 /******Banner Slider on landing page **********/
@@ -151,18 +198,83 @@ margin-right: 20px;
   height: 40vh;
 }
 
-.home-banner-center, .about-us-banner-center {
+.home-banner-center, .about-us-banner-center, .planyourvisit-btn {
   margin-bottom: 50px;
   margin-top: 30px;
 }
 
-.maintitle, .theme-wrapper, .about-image, .compact-paragraph{
+.maintitle, .theme-wrapper, .about-image, .event-text, .compact-paragraph{
     padding: 20px;
 }
 
 .maintitle, .subtitle {
     color: #4FB156
 }
+
+/****** Buttons *******/
+.planyourvisit-btn{
+    width: 300px;
+    background: #4FB156;
+    font-size: 20px;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.getdirections-btn, .gettickets-btn, .btn-reserve {
+    width: 200px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    margin: 40px auto 10px 15px;
+    border-radius: 5px; 
+}
+
+.planyourvisit-btn, .getdirections-btn, .gettickets-btn {
+    color: black;
+    font-weight: bold;
+    transition: all 250ms ease-in-out;
+}
+
+/* Button in the Contact Us page */
+.btn-submit{
+    background: #00bce4; 
+ }
+
+.btn-submit, .btn-signup{
+ font-weight: 700;
+ }
+
+ .getdirections-btn, .gettickets-btn,.gettickets-btn:hover, .getdirections-btn:hover, .btn-signup{
+    background: #FF9F30;
+}
+
+.planyourvisit-btn:hover {
+    background: #FF3932;
+}
+
+.btn-submit:hover {
+    background: #0099E4 !important;   
+ }
+
+.btn-reserve:hover {
+    background:rgb(14, 90, 47);
+} 
+
+ .btn-reserve {
+     background: #4FB156;
+    /* width:150px; */
+ }
+
+ .btn-signup:hover {
+    background: rgb(212, 130, 35) !important; 
+ }
+
+.planyourvisit-btn, .getdirections-btn, .gettickets-btn, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-reserve, .btn-reserve:hover{
+    text-decoration: none;
+}
+
 
 /********* Home Page **********/
 
@@ -180,56 +292,9 @@ margin-right: 20px;
   100% {color:#00bce4;}
 }
 
-.uppercase {
-    text-transform: uppercase;
-}
-
-.main-text-wrapper, .main-image-wrapper, .text-container, .theme-wrapper, .dotted-separator, .first-name, .last-name {
+.main-text-wrapper, .main-image-wrapper, .text-container, .theme-wrapper, .dotted-separator, .first-name, .last-name, .event-header, #googlemap, #modal, .modal-content , .overlay {
     width: 100%;
 }
-
-.about-image, .gallery, .contact-form-wrapper, .phone-wrapper, .email-wrapper, .address {
-    margin: auto;
-}
-
-.main-text-wrapper{
-    text-align: justify;
-}
-
-.main-image-wrapper, .maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-plan-your-visit, .subtitle-events, .text-container, .gallery, .gallery_caption, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .btn-reserve, .theme-subtitle-wrapper, .about-image, .quote, .review-author, .customer-review,.compact-paragraph, .phone-wrapper, .email-wrapper, 
-.location-wrapper, .subtitle-theme, #social-media, .footer-title, #location-info, .copyright-statement, .location-wrapper {
-    text-align: center;
-}
-
-.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events,.subtitle-plan-your-visit, .planyourvisit-btn, .getdirections-btn, .gettickets-btn, .btn-reserve, .theme-subtitle-wrapper,
-.navbar .nav > li > a{
- font-family: 'Salsa', cursive, Helvetica;
- }
-
-.maintitle, .subtitle, .subtitle-about, .subtitle-contact, .subtitle-events, .subtitle-plan-your-visit{
-    font-weight: 200;
-    margin-top: 20px;
-    text-shadow: 2px 2px 2px #FF3932;
-}
-
-.subtitle, .subtitle-about, .subtitle-contact, .subtitle-events {
-    padding: 30px 0px;
-} 
-
-.subtitle-about{
-    color: #AB6BFF; /* purple */   
-}
-.subtitle-contact{
-    color: #00bce4; /* blue */
-}
-.subtitle-plan-your-visit{
-    padding: 30px 20px 20px 30px;
-}
-
-.subtitle-plan-your-visit, .subtitle-events {
-    color:#FF9F30;
-}
-
 
 /****** Business Highlights ****/
 .text-container{
@@ -271,8 +336,11 @@ margin-right: 20px;
     padding-left: 0px;
 }
 
+.gallery ul > li, .gallery_caption, .timeline, .container-2, .content, .title-content > a {
+    position: relative;    
+}
+
 .gallery ul > li {
-    position: relative;
     min-height: 250px;
     width: auto; 
     margin: 8px 1px 8px 0px;
@@ -284,7 +352,6 @@ margin-right: 20px;
 }
 
 .gallery_caption {
-    position: relative; 
     color: rgba(0,0,0,.8);
     min-height: 40px;
     width: auto;
@@ -298,83 +365,9 @@ margin-right: 20px;
     display: inline-block;
 }
 
-
-
 .room-img  img {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-}
-
-/****** Buttons *******/
-.planyourvisit-btn{
-    width: 300px;
-    background: #4FB156;
-    font-size: 20px;
-    letter-spacing: 3px;
-    padding-bottom: 20px;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    border-radius: 10px;
-}
-
-.getdirections-btn, .gettickets-btn, .btn-reserve {
-    width: 200px;
-    font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    padding-bottom: 10px;
-    margin: 40px auto 10px 15px;
-    border-radius: 5px; 
-}
-
-.planyourvisit-btn, .getdirections-btn, .gettickets-btn {
-    color: black;
-    font-weight: bold;
-    transition: all 250ms ease-in-out;
-}
-
-/* Button in the Contact Us page */
-.btn-submit{
-    background: #00bce4; 
-    font-weight: 700;
- }
-
-.btn-signup {
-    background: #FF9F30 !important;
-  /*  background: #FF9F30; */
-    font-weight: 700;
-    text-align: right;
- }
-
-.btn-signup:hover {
-    background: rgb(207, 120, 21) !important;
-   /* font-weight: 700;
-    text-align: right; */
- }
-
- .getdirections-btn, .gettickets-btn,.gettickets-btn:hover, .getdirections-btn:hover{
-    background: #FF9F30;
-}
-
-.planyourvisit-btn:hover {
-    background: #FF3932;
-}
-
-.btn-submit:hover {
-    background: #0099E4 !important;   
- }
-
-.btn-reserve:hover {
-    background:rgb(14, 90, 47);
-} 
-
- .btn-reserve {
-     background: #4FB156; /*#1A8849; */
-     width:150px;
- }
-
-.planyourvisit-btn, .getdirections-btn, .gettickets-btn, .planyourvisit-btn:hover, .gettickets-btn:hover, .getdirections-btn:hover, .btn-reserve, .btn-reserve:hover{
-    text-decoration: none;
 }
 
 /**************Theme of the month *************/
@@ -404,6 +397,7 @@ margin-right: 20px;
     padding: 10px; 
 }
 
+
 /************ About Us Page *************/
 .about-title {
     padding: 50px 0px 30px;
@@ -420,7 +414,6 @@ margin-right: 20px;
  
 /* The actual timeline (the vertical ruler) */
 .timeline {
-  position: relative;
   max-width: 1068px;
   margin: 0 auto 55px;
 }
@@ -440,7 +433,6 @@ margin-right: 20px;
 /* Container around content */
 .container-2 {
   padding: 10px 40px;
-  position: relative;
   width: 50%;
 }
 
@@ -510,7 +502,6 @@ margin-right: 20px;
 .content {
   padding: 20px 30px;
   background-color: rgb(185, 137, 247);
-  position: relative;
   border-radius: 6px;
 }
 
@@ -609,7 +600,6 @@ margin-right: 20px;
 .event-header {
     background-color: #FF9F30;
     height: 50px;
-    width: 100%;
     color:#fafafa;
 }
 
@@ -629,7 +619,6 @@ margin-right: 20px;
 }
 
 .title-content > a {
-    position: relative;
     padding: 10px;
     bottom: 5px;
 }
@@ -642,9 +631,6 @@ margin-right: 20px;
     padding: 10px;
 }
 
-.event-text{
-    padding: 20px;
-}
 
 #reserve-btn {
     position: fixed;
@@ -667,13 +653,11 @@ margin-right: 20px;
     border-radius: 5px;
     z-index: 9000;
     background-color: rgb(245, 220, 167);
-    text-align: justify;
     }
 
 .event-form-header{
     text-align:center;
     color: black;
-    padding-top: 15px;
     padding-bottom:25px;
 }
 
@@ -754,7 +738,6 @@ margin-right: 20px;
 
 #googlemap {
     height: 300px;
-    width: 100%;  
     margin-right: 6%;
     margin-left: 6.5%;
 }
@@ -776,19 +759,15 @@ margin-right: 20px;
   z-index:8000;
   background-color: rgba(0, 0, 0, 0.6); 
   display:none;
-  width: 100%;
   top:18%;
   left: 0.1px;
-  margin: auto;
   text-align:center;
   padding-top:8px;
 }
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
   display: block;
-  width: 100%;
   height:auto;
   max-width: 900px;
   max-height:500px;
@@ -822,7 +801,6 @@ margin-right: 20px;
   cursor: pointer;
 }
 
-/*******************/
 .overlay {
   position: absolute;
   bottom: 0;
@@ -830,7 +808,6 @@ margin-right: 20px;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6); 
   overflow: hidden;
-  width: 100%;
   height: 0;
   transition: .5s ease;
   border-top-left-radius: 25px;
@@ -852,7 +829,6 @@ margin-right: 20px;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 /***************  Footer *****************/
@@ -957,7 +933,7 @@ footer {
     width: 49.5%;
  } 
 
- .copyright-statement {
+ .getdirections-btn, .gettickets-btn, .btn-reserve, .copyright-statement {
     font-size: 15px;
  }
 
@@ -967,8 +943,6 @@ footer {
 
 #googlemap {
     height: 300px;
-    width: 100%;  
-    margin-right: 6%;
 }
 
 .phone-wrapper, .email-wrapper{
@@ -1003,7 +977,6 @@ footer {
  } 
 
  #reserve-btn {
-    margin-right: 15px;
     margin-bottom: 20px
 }
 }
@@ -1018,7 +991,6 @@ footer {
    padding-left: 100px;
  } 
 
-/*EB*/
  .slider, .banner-about-us, .banner-rooms, .banner-your-visit, .banner-events, .banner-contact-us {
     height: 50vh;
  } 
@@ -1071,6 +1043,6 @@ footer {
 }
 
 #reserve-btn {
-    margin-right: 75px;
+    margin-right: 25px;
 }
 }
