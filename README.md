@@ -82,18 +82,17 @@ Modal and mask color: ![#000000](https://placehold.it/15/000000/000000?text=+) `
 
 ### Skeleton
 
-[Landing Page wireframe](https://github.com/EliBec/my-first-frontend-milestone-project/tree/remove-rooms-and-events-webpages/wireframe/LandingPage_Wireframe.pdf)
+[Landing Page wireframe](https://github.com/EliBec/my-first-interactive-frontend-milestone-project/blob/master/wireframes/LandingPage.pdf)
 
-[About Us wireframe](https://github.com/EliBec/my-first-frontend-milestone-project/tree/remove-rooms-and-events-webpages/wireframe/AboutUs_Wireframe.pdf)
+[About Us wireframe](https://github.com/EliBec/my-first-interactive-frontend-milestone-project/blob/master/wireframes/AboutUs.pdf)
 
-[Rooms]
+[Rooms](https://github.com/EliBec/my-first-interactive-frontend-milestone-project/blob/master/wireframes/Rooms.pdf)
 
-[Plan Your Visit wireframe](https://github.com/EliBec/my-first-frontend-milestone-project/tree/remove-rooms-and-events-webpages/wireframe/PlanYourVisit_Wireframe.pdf)
+[Plan Your Visit wireframe](https://github.com/EliBec/my-first-interactive-frontend-milestone-project/blob/master/wireframes/PlanYourVisit.pdf)
 
-[Events]
+[Events](https://github.com/EliBec/my-first-interactive-frontend-milestone-project/blob/master/wireframes/Events.pdf)
 
-[Contact Us wireframe](https://github.com/EliBec/my-first-frontend-milestone-project/tree/remove-rooms-and-events-webpages/wireframe/ContactUs_Wireframe.pdf)
-
+[Contact Us wireframe](https://github.com/EliBec/my-first-interactive-frontend-milestone-project/blob/master/wireframes/ContactUs.pdf)
 
 
 ## Features
