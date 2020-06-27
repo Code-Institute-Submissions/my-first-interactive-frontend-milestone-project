@@ -21,56 +21,7 @@
         emailjs.init("user_q4NdX6hK4WfRlld13gb3E");
     })();
     </script>
-
-  <script>
-  $( function() {
-    $( ".title-accordion" ).accordion();
-  } );
-  </script>
-
-  <title>KiddosSpot</title>
-
- <script type="text/javascript">
-    $(document).ready(function() {	
-
-	//select all the a tag with name equal to modal
-	$('a[name=modal]').click(function(e) {
-		//Cancel the link behavior
-		e.preventDefault();
-		//Get the A tag
-		var id = $(this).attr('href');
-	
-		//Get the screen height and width
-		var maskHeight = $(document).height();
-		var maskWidth = $(window).width();
-	
-		//Set height and width to mask to fill up the whole screen
-		$('#mask').css({'width':maskWidth,'height':maskHeight});
-		
-		//transition effect		
-		$('#mask').fadeTo(300, 0.3);
-	
-		//transition effect
-        $(id).css("display", "block");
-		$(id).fadeIn(300); 
-	});
-	
-	//if close button is clicked
-	$('.window .closewindow').click(function (e) {
-		//Cancel the link behavior
-		e.preventDefault();
-		$('#mask, .window').hide();
-	});		
-	
-	//if mask is clicked
-	$('#mask').click(function () {
-		$(this).hide();
-		$('.window').hide();
-	});			
-	
-});
-</script>
-
+    <title>KiddosSpot</title>
 </head>
 <body>
     <header>
@@ -365,4 +316,10 @@
     <script src="js/sendEventEmail.js"></script>
     <script src="js/script.js"></script>
 </body>
+<script>
+// jQuery Code for Accordion Functionality
+  $( function() {
+    $( ".title-accordion" ).accordion();
+  } );
+</script>
 </html>

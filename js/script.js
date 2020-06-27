@@ -111,3 +111,43 @@ function showSlidesAuto(n) {
 
 showSlidesAuto(slideIndex);
 });
+
+/* Javascript code for the Event Signup Form - Modal 
+   Note: Code is partially taken from https://www.queness.com/post/77/simple-jquery-modal-window-tutorial */
+   $(document).ready(function() {	
+
+	//select all the a tag with name equal to modal
+	$('a[name=modal]').click(function(e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		//Get the A tag
+		var id = $(this).attr('href');
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set height and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeTo(300, 0.3);
+	
+		//transition effect
+        $(id).css("display", "block");
+		$(id).fadeIn(300); 
+	});
+	
+	//if close button is clicked
+	$('.window .closewindow').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		$('#mask, .window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});				
+});
