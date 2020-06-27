@@ -6,6 +6,7 @@ The website's goal is to find all relevant information about the place easily wi
 
 ## Demo
 <hr>
+
 A live demo can be found [HERE](https://elibec.github.io/my-first-interactive-frontend-milestone-project/)
 
 GitHub repository link can be found [HERE](https://github.com/EliBec/my-first-interactive-frontend-milestone-project)
@@ -292,7 +293,7 @@ Please follow steps below to **deploy** this project:
 2. Select the appropriate repository, in this case, my-first-interactive-frontend-milestone-project
 3. Make sure the master branch is selected from the  Branch drop-down menu on the left-hand side
 4. Click the Settings option, located on the right side of the menu on the upper section. This will direct you to the Settings page
-5. On the Stting page, scroll down to the GitHub Pages section
+5. Once on the Setings page, scroll down to the GitHub Pages section
 6. Under Source section, click the None drop-down menu and select Master Branch. Upon making this election, the page is automatically refreshed and the website is deployed.
 7. Still on the Settings page, scroll back down to the GitHub Pages section where the link for the deployed website will be displayed. Select this link and paste it on  new tab to confirm the live website is accessible 
 
